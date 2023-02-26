@@ -6,6 +6,22 @@ const main = document.querySelector(".main");
 const error_message = document.createElement("p");
 const serverUrl = 'http://p-mozil.click/';
 
+const copyContent = async () => {
+     let text = result.textContent;
+        try {
+          await navigator.clipboard.writeText(text);
+          alert("Ingredients and directions copied");
+          ingredientsField.value="";
+          ingredientsField.focus();
+        } catch (err) {
+          console.error('Failed to copy: ', err);
+        }
+      }
+
+main.addEventListener("click",function(){
+    copyContent();
+})
+
 ingredientsField.addEventListener("keypress", function(e) {
     if (e.key === "Enter" && document.querySelector(".findButton")) {
      e.preventDefault();

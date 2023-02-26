@@ -486,4 +486,7 @@ p.collored_line{
 	.ingredientsField::placeholder{
 		font-size:13px;
 	  }
+    .main{
+      margin-bottom: 15px;
+    }
 }
