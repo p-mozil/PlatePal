@@ -378,6 +378,8 @@ body {
   font-weight: bold;
   background-repeat: no-repeat;
   background-size: cover;
+  background-image: url("../../build/img/header.jpg");
+  color: var(--color-background);
   font-size:16px;
   letter-spacing: 1px;
   line-height: 24px;
