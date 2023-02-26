@@ -18,7 +18,7 @@ const copyContent = async () => {
         }
       }
 
-main.addEventListener("click",function(){
+main.addEventListener("dblclick",function(){
     copyContent();
 })
 
